@@ -294,3 +294,80 @@
 // }
 // // in console stampo il nuovo array
 // console.table(myArray);
+
+// // SNACK 1: crea un array di 10 automobili; ogni autO ha le proprietà di marca, modello e alimentazione; dividi le auto in 3 array a seconda che siano a benzina, a diesel o con un altro tipo di alimentazione
+
+// const cars = [
+//   {
+//     marca: "Fiat",
+//     modello: "Panda",
+//     alimentazione: "diesel",
+//   },
+//   {
+//     marca: "Ford",
+//     modello: "Fiesta",
+//     alimentazione: "benzina",
+//   },
+//   {
+//     marca: "Fiat",
+//     modello: "Panda",
+//     alimentazione: "diesel",
+//   },
+//   {
+//     marca: "Renault",
+//     modello: "Clio",
+//     alimentazione: "gpl",
+//   },
+//   {
+//     marca: "Fiat",
+//     modello: "Panda",
+//     alimentazione: "benzina",
+//   },
+//   {
+//     marca: "Renault",
+//     modello: "Clio",
+//     alimentazione: "gpl",
+//   },
+//   {
+//     marca: "Ford",
+//     modello: "Fiesta",
+//     alimentazione: "elettrico",
+//   },
+//   {
+//     marca: "Fiat",
+//     modello: "Panda",
+//     alimentazione: "metano",
+//   },
+//   {
+//     marca: "Renault",
+//     modello: "Clio",
+//     alimentazione: "elettrico",
+//   },
+//   {
+//     marca: "Ford",
+//     modello: "Fiesta",
+//     alimentazione: "metano",
+//   },
+// ];
+
+// const benzinaCars = cars.filter((car) => car.alimentazione == "benzina");
+// const dieselCars = cars.filter((car) => car.alimentazione == "diesel");
+// const otherCars = cars.filter(
+//   (car) => car.alimentazione != "benzina" && car.alimentazione != "diesel"
+// );
+
+// console.log("Auto a benzina: ", benzinaCars);
+// console.log("Auto a diesel: ", dieselCars);
+// console.log("Le altre auto sono: ", otherCars);
+
+// // SNACK 2: creare un array di stringhe e creare un secondo array formattando le stringhe del primo array in minuscolo con le inziiali in maiuscolo
+// const nomi = ["pippo", "PLUTO", "Paperino"];
+
+// const newArray = nomi.map((nome) => {
+//   let firstLetterUpperCase = nome[0].toUpperCase();
+//   let restNameLowerCase = nome.substring(1).toLowerCase();
+//   let newName = firstLetterUpperCase + restNameLowerCase;
+//   return newName;
+// });
+
+// console.log(newArray);
